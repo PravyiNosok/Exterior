@@ -20,6 +20,10 @@ ModelImporter:
     100024: Object914
     100026: Plane028
     100028: Plane207
+    100030: Object847
+    100032: Object848
+    100034: Object851
+    100036: Plane050
     400000: Cylinder002
     400002: Donut003
     400004: //RootNode
@@ -35,6 +39,10 @@ ModelImporter:
     400024: Object914
     400026: Plane028
     400028: Plane207
+    400030: Object847
+    400032: Object848
+    400034: Object851
+    400036: Plane050
     2300000: Cylinder002
     2300002: Donut003
     2300004: Object1055

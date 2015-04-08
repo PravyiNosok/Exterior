@@ -86,7 +86,7 @@ public class OVRPlayerController : MonoBehaviour
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraController = null;
 
-	private float MoveScaleMultiplier = 1.0f;
+    [SerializeField]private float MoveScaleMultiplier = 1.0f;
 	private float RotationScaleMultiplier = 1.0f;
 	private bool  SkipMouseRotation = false;
 	private bool  HaltUpdateMovement = false;
@@ -122,6 +122,11 @@ public class OVRPlayerController : MonoBehaviour
 
 	protected virtual void Update()
 	{
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            Application.LoadLevel(0);
+        }else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            Application.LoadLevel(1);
+        }
 		if (useProfileHeight)
 		{
 			if (InitialPose == null)
